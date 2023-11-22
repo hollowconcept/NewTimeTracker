@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Startseite";
+}
+
+@using (Html.BeginForm("AddEntry", "Home", FormMethod.Post, new { id = "AddEntry" }))
+{
+    @Html.AntiForgeryToken()
+<section class="vh-100">
+    <div class="row">
+        <div class="card w-100 ml-4 mr-4">
+
+            <div class="col-12 justify-content-start ml-3 mb-4">
+                <container class="bg-white">
+                    <h6 class="text-muted border-bottom border-5 mt-4 text-uppercase" style="letter-spacing: 1.5px;">dashboard</h6>
+                    <div class="col-lg-12 p-0 m-0">
+                        <div class="d-flex flex-wrap justify-content-between m-0 p-0">
+                            <div class="col-lg-4">
+                                <div class="card bg-primary band">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Heute | Erfasste Stunden</h5>
+                                        <h6 class="card-subtitle text-white op-5">23.10.2023</h6>
+                                        <div class="d-flex no-block"></div>
+                                        <h4 class="m-b-0 text-white" id="hoursToday">0 Stunden</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card bg-warning band">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Woche | Erfasste Stunden</h5>
+                                        <h6 class="card-subtitle text-white op-5">23.10.2023 - 29.10.2023</h6>
+                                        <div class="d-flex no-block"></div>
+                                        <h4 class="m-b-0 text-white" id="hoursToday">0 Stunden</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card bg-danger band">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Monat | Erfasste Stunden</h5>
+                                        <h6 class="card-subtitle text-white op-5">Oktober</h6>
+                                        <div class="d-flex no-block"></div>
+                                        <h4 class="m-b-0 text-white" id="hoursToday">0 Stunden</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </container>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="card w-100 ml-4 mr-4">
+
+            <div class="col-12 justify-content-start ml-3 mb-4">
+                <container class="bg-white">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-12 col-md-8">
+                            <div class="card">
+
+                                <h6 class="text-muted border-bottom border-5 mt-4 text-uppercase" style="letter-spacing: 1.5px;">Zeiten Übersicht</h6>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </container>
+            </div>
+        </div>
+
+        <div class="card w-100 ml-4 mr-4">
+            <div class="col-12 col-md-4">
+                <div class="card user-card-full">
+                    <div class="card-body mt-0 pt-4 pb-0">
+                        <h6 class="m-b-10 p-b-5 b-b-default f-w-60 text-uppercase" style="letter-spacing: 1.5px;">Persönliche Umsätze</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+}
+
+
+
